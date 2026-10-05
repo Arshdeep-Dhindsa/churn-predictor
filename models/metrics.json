@@ -1,0 +1,24 @@
+{
+  "best_model": "logistic_regression",
+  "cv_roc_auc": {
+    "logistic_regression": 0.8094,
+    "random_forest": 0.8013,
+    "gradient_boosting": 0.804
+  },
+  "test_roc_auc": 0.8255,
+  "test_accuracy": 0.81,
+  "test_precision_churn": 0.6509,
+  "test_recall_churn": 0.3943,
+  "confusion_matrix": [
+    [
+      862,
+      59
+    ],
+    [
+      169,
+      110
+    ]
+  ],
+  "train_rows": 4800,
+  "test_rows": 1200
+}
