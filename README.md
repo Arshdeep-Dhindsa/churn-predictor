@@ -21,6 +21,10 @@ through a FastAPI REST API with a small web UI.
 - pytest + httpx (tests)
 - Docker, Render (deployment)
 
+## Live Demo
+https://churn-predictor-g1rd.onrender.com
+
+
 ## Local setup
 
 ```bash
@@ -42,14 +46,6 @@ curl -X POST http://127.0.0.1:8000/predict -H "Content-Type: application/json" -
   "contract": "Month-to-month", "internet_service": "Fiber",
   "payment_method": "Cash", "tech_support": "No", "paperless_billing": "Yes"}'
 ```
-
-## Deploy (free) on Render
-
-1. Push this folder to a GitHub repo.
-2. Render → New → Web Service → connect the repo → Runtime: **Docker**.
-3. Deploy. Your public URL serves the web UI at `/` and Swagger docs at `/docs`.
-
-(Alternative: Hugging Face Spaces with the Docker SDK, set `app_port: 8000`.)
 
 ## Using real data
 
